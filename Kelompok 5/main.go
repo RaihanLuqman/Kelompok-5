@@ -28,9 +28,6 @@ func mainHandler(w http.ResponseWriter, r *http.Request) {
 				http.Error(w, "Division by zero", http.StatusBadRequest)
 				return
 			}
-		case "**2":
-            result = num1 * num1
-
 		default:
 			http.Error(w, "Invalid operator", http.StatusBadRequest)
 			return
